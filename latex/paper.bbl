@@ -1,0 +1,145 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{bernerslee2001}
+Berners-Lee, T., Hendler, J., Lassila, O.: The {Semantic Web}. Scientific
+  American  \textbf{284}(5),  34--43 (May 2001)
+
+\bibitem{bischof2020}
+Bischof, S., Schenner, G.: Towards a railway topology ontology to integrate and
+  query rail data silos. In: SEMWEB (2020)
+
+\bibitem{chaudhuri2000}
+Chaudhuri, S., Weikum, G.: Rethinking database system architecture: Towards a
+  self-tuning risc-style database system. In: Proceedings of the 26th
+  International Conference on Very Large Data Bases. p. 1–10. VLDB '00,
+  Morgan Kaufmann Publishers Inc., San Francisco, CA, USA (2000)
+
+\bibitem{eu-57-2008}
+{Council of European Union}: Council regulation ({EU}) no 2008/57 (2008),
+  \url{https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32008L0057}
+
+\bibitem{eu-65-2011}
+{Council of European Union}: Council regulation ({EU}) no 2011/65 (2011),
+  \url{https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0065}
+
+\bibitem{eu-34-2012}
+{Council of European Union}: Council regulation ({EU}) no 2012/34 (2016),
+  \url{https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012L0034}
+
+\bibitem{eu-796-2016}
+{Council of European Union}: Council regulation ({EU}) no 2016/796 (2016),
+  \url{https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0796}
+
+\bibitem{eu-797-2016}
+{Council of European Union}: Council regulation ({EU}) no 2016/797 (2016),
+  \url{https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016L0797}
+
+\bibitem{eu-1614-2018}
+{Council of European Union}: Council regulation ({EU}) no 2018/1614 (2018),
+  \url{https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.268.01.0053.01.ENG&toc=OJ:L:2018:268:TOC}
+
+\bibitem{eu-773-2019}
+{Council of European Union}: Council regulation ({EU}) no 2019/773 (2019),
+  \url{https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj}
+
+\bibitem{delling2017}
+Delling, D., Goldberg, A., Pajor, T., Werneck, R.F.: Customizable route
+  planning in road networks. Transp. Sci.  \textbf{51},  566--591 (2017)
+
+\bibitem{dibbelt2016}
+Dibbelt, J., Strasser, B., Wagner, D.: Customizable contraction hierarchies.
+  ACM J. Exp. Algorithmics  \textbf{21} (Apr 2016)
+
+\bibitem{dimou2014}
+Dimou, A., Vander~Sande, M., Colpaert, P., Verborgh, R., Mannens, E., Van~de
+  Walle, R.: {RML:} a generic language for integrated {RDF} mappings of
+  heterogeneous data. In: Proceedings of the 7th Workshop on Linked Data on the
+  Web. CEUR Workshop Proceedings, vol.~1184 (Apr 2014)
+
+\bibitem{fielding2002}
+Fielding, R.T., Taylor, R.N.: Principled design of the modern web architecture.
+  ACM Trans. Internet Technol.  \textbf{2}(2),  115–150 (May 2002)
+
+\bibitem{garijo2020}
+Garijo, D., Geluk, J., Scharm, M., Ruiz-Iniesta, A., McBennett, P., Serafini,
+  A., María, kartgk, Corcho, O., rpietzsch, Schneider, J., Leitschuh, J.,
+  Scrocca, M., Lefrançois, M., Garcia, M.A., Zack-83: {dgarijo/Widoco: WIDOCO
+  1.4.15\_1 (pre-release): Namespace prefixes fixes and WebVowl update} (Dec
+  2020)
+
+\bibitem{gely2010}
+G{\'e}ly, L., Dessagne, G., Pesneau, P., Vanderbeck, F.: A multi scalable model
+  based on a connexity graph representation. WIT Transactions on the Built
+  Environment  \textbf{114},  193--204 (2010)
+
+\bibitem{gubichev2011}
+Gubichev, A., Neumann, T.: Path query processing on very large rdf graphs. In:
+  WebDB (2011)
+
+\bibitem{hart1968}
+{Hart}, P.E., {Nilsson}, N.J., {Raphael}, B.: A formal basis for the heuristic
+  determination of minimum cost paths. IEEE Transactions on Systems Science and
+  Cybernetics  \textbf{4}(2),  100--107 (1968)
+
+\bibitem{heath2011}
+Heath, T., Bizer, C.: {Linked Data:} evolving the {Web} into a global data
+  space  (2011), \url{http://linkeddatabook.com/editions/1.0/}
+
+\bibitem{heyvaert2018}
+Heyvaert, P., De~Meester, B., Dimou, A., Verborgh, R.: {Declarative Rules for
+  Linked Data Generation at your Fingertips!} In: Proceedings of the
+  15\textsuperscript{th} ESWC: Posters and Demos (2018)
+
+\bibitem{hlubucek2017}
+Hlubuček, A.: Railtopomodel and railml 3 in overall context. Acta Polytechnica
+  CTU Proceedings  \textbf{11}, ~16 (08 2017). \doi{10.14311/APP.2017.11.0016}
+
+\bibitem{irs30100}
+{RailTopoModel - Railway Infrastructure Topological Model}. Standard,
+  International Union of Railways, Paris, FR (2016)
+
+\bibitem{morris2014}
+{Morris}, C., {Easton}, J., {Roberts}, C.: Applications of linked data in the
+  rail domain. In: 2014 IEEE International Conference on Big Data (Big Data).
+  pp. 35--41 (2014)
+
+\bibitem{eu-iop}
+{Publications Office of the European Union}: New european interoperability
+  framework: Promoting seamless services and data flows for european public
+  administrations (2017),
+  \url{https://ec.europa.eu/isa2/sites/default/files/eif_brochure_final.pdf}
+
+\bibitem{savenkov2017}
+Savenkov, V., Mehmood, Q., Umbrich, J., Polleres, A.: Counting to k or how
+  sparql1.1 property paths can be extended to top-k path queries. In:
+  Proceedings of the 13th International Conference on Semantic Systems. p.
+  97–103. Semantics2017, Association for Computing Machinery, New York, NY,
+  USA (2017)
+
+\bibitem{tutcher2017}
+Tutcher, J., Easton, J., Roberts, C.: Enabling data integration in the rail
+  industry using rdf and owl: The racoon ontology. ASCE-ASME Journal of Risk
+  and Uncertainty in Engineering Systems, Part A: Civil Engineering  \textbf{3}
+  (2017)
+
+\bibitem{verborgh2014}
+Verborgh, R., Vander~Sande, M., Colpaert, P., Coppens, S., Mannens, E., Van~de
+  Walle, R.: {Web}-scale querying through {Linked Data Fragments}. In: Bizer,
+  C., Heath, T., Auer, S., Berners-Lee, T. (eds.) Proceedings of the
+  7\textsuperscript{th} Workshop on Linked Data on the Web. {CEUR} Workshop
+  Proceedings, vol.~1184 (Apr 2014)
+
+\bibitem{verstichel2011}
+Verstichel, S., Ongenae, F., Loeve, L., Vermeulen, F., Dings, P., Dhoedt, B.,
+  Dhaene, T., Turck, F.D.: Efficient data integration in the railway domain
+  through an ontology-based methodology. Transportation Research Part C:
+  Emerging Technologies  \textbf{19}(4),  617--643 (2011)
+
+\bibitem{yen1971}
+Yen, J.Y.: Finding the k shortest loopless paths in a network. Management
+  Science  \textbf{17}(11),  712--716 (1971)
+
+\end{thebibliography}

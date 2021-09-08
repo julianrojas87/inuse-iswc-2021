@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Leveraging semantic technologies for digital interoperability in the European Railway domain</title>
+  <link rel="stylesheet" media="screen" href="styles/screen.css" />
+  <link rel="stylesheet" media="print"  href="styles/print.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <meta name="citation_title" content="Leveraging semantic technologies for digital interoperability in the European Railway domain">
+  <meta name="citation_author" content="Julián Andrés Rojas" />
+  <meta name="citation_author" content="Marina Aguado" />
+  <meta name="citation_author" content="Polymnia Vasilopoulou" />
+  <meta name="citation_author" content="Ivo Velitchkov" />
+  <meta name="citation_author" content="Dylan Van Assche" />
+  <meta name="citation_author" content="Pieter Colpaert" />
+  <meta name="citation_author" content="Ruben Verborgh" />
+  
+  <meta name="citation_publication_date" content="2021/09/08" />
+</head>
+
+<body prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: https://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# schema: http://schema.org/ void: http://rdfs.org/ns/void# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ sioc: http://rdfs.org/sioc/ns# doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# ldp: http://www.w3.org/ns/ldp# solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio# as: https://www.w3.org/ns/activitystreams# oa: http://www.w3.org/ns/oa# ldp: http://www.w3.org/ns/ldp#" typeof="schema:CreativeWork sioc:Post prov:Entity">
+  <header>
+  <h1 id="leveraging-semantic-technologies-for-digital-interoperability-in-the-european-railway-domain">Leveraging semantic technologies for digital interoperability in the European Railway domain</h1>
+
+  <ul id="authors">
+    <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://julianrojas.org/" typeof="foaf:Person schema:Person" resource="https://julianrojas.org/#me" id="idlab">Julián Andrés Rojas</a><sup>1</sup></li>
+    <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://era.europa.eu" typeof="foaf:Person schema:Person" resource="#marinaaguado" id="era">Marina Aguado</a><sup>2</sup></li>
+    <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://era.europa.eu" typeof="foaf:Person schema:Person" resource="#polymniavasilopoulou" id="era">Polymnia Vasilopoulou</a><sup>2</sup></li>
+    <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://ec.europa.eu/info/departments/informatics_en" typeof="foaf:Person schema:Person" resource="#ivovelitchkov" id="digit">Ivo Velitchkov</a><sup>3</sup></li>
+    <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://dylanvanassche.be/" typeof="foaf:Person schema:Person" resource="https://dylanvanassche.be/#me" id="idlab">Dylan Van Assche</a><sup>1</sup></li>
+    <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://pietercolpaert.be/" typeof="foaf:Person schema:Person" resource="https://pietercolpaert.be/#me" id="idlab">Pieter Colpaert</a><sup>1</sup></li>
+    <li><a rev="lsc:participatesIn" property="foaf:maker schema:creator schema:author schema:publisher" href="https://ruben.verborgh.org/" typeof="foaf:Person schema:Person" resource="https://ruben.verborgh.org/profile/#me" id="idlab">Ruben Verborgh</a><sup>1</sup></li>
+  </ul>
+
+  <ul id="affiliations">
+    <li id="idlab"><sup>1</sup>IDLab,
+          Department of Electronics and Information Systems,
+          Ghent University – imec</li>
+    <li id="era"><sup>2</sup>European Union Agency for Railways</li>
+    <li><sup>3</sup>DG DIGIT</li>
+  </ul>
+
+  <section class="context">
+  <h2 id="in-reply-to">In reply to</h2>
+  <ul>
+    <li><a href="https://julianrojas.org/papers/iswc2021-in-use" rel="as:inReplyTo">The In-Use call of 20th International Semantic Web Conference</a></li>
+  </ul>
+</section>
+  <div class="printonly" style="margin-bottom: 0.5em; font-size: 0.9em">Preprint HTML version at <a href="https://julianrojas.org/papers/iswc2021-in-use">https:/​/​julianrojas.org/papers/iswc2021-in-use</a></div>
+
+  <section id="abstract" inlist="" rel="schema:hasPart" resource="#abstract">
+<div datatype="rdf:HTML" property="schema:description">
+      <h2 property="schema:name">Abstract</h2>
+
+      <!-- Context      -->
+      <p>The European Union Agency for Railways acts as an European authority,
+tasked with the provision of a legal and technical framework
+to support harmonized and safe cross-border railway operations throughout the EU.
+So far, the agency relied on traditional application-centric approaches
+to support the data exchange among multiple actors interacting within the railway domain.
+<!-- Need         -->
+This lead however, to isolated digital environments
+that consequently added barriers to digital interoperability
+while increasing the cost of maintenance and innovation.
+<!-- Task         -->
+In this work,
+we show how Semantic Web technologies are leveraged
+to create a semantic layer for data integration
+across the base registries maintained by the agency.
+We validate the usefulness of this approach
+by supporting route compatibility checks,
+a highly demanded use case in this domain,
+which was not available over the agency’s registries before.
+<!-- Object     -->
+Our contributions include
+(i) an official ontology for the railway infrastructure and authorized vehicle types, including 28 reference datasets;
+(ii) a reusable Knowledge Graph describing the European railway infrastructure;
+(iii) a cost-efficient system architecture that enables high-flexibility for use case development; and
+(iv) an open source and RDF native Web application to support route compatibility checks.
+<!-- Conclusion & Perspective     -->
+This work demonstrates how data-centric system design,
+powered by Semantic Web technologies and Linked Data principles,
+provides a framework to achieve data interoperability
+and unlock new and innovative use cases and applications.
+Based on the results obtained during this work,
+ERA officially decided to make Semantic Web and Linked Data-based approaches,
+the default setting for any future development of the data,
+registers and specifications under the agency’s remit
+for data exchange mandated by the EU legal framework.
+The next steps, which are already underway,
+include further developing and bringing these solutions to a production-ready state.</p>
+
+    </div>
+</section>
+
+</header>
+
+<main>
+  <!-- Add sections by specifying their file name, excluding the '.md' suffix. -->
+  <section id="introduction" inlist="" rel="schema:hasPart" resource="#introduction">
+<div datatype="rdf:HTML" property="schema:description">
+      <h2 property="schema:name">Introduction</h2>
+
+      <!-- Context      -->
+      <p>The establishment of an interoperable
+European railway area without frontiers,
+while guaranteeing railway operation safety,
+is the prime objective of the European Union Agency for Railways (ERA) <span class="references">[<a href="#ref-1">1</a>]</span>.
+Since 2019 <a href="https://www.era.europa.eu/content/era-becomes-european-authority-cross-border-rail-traffic-europe_en">ERA became the European authority</a><sup id="fnref:eu-authority" role="doc-noteref"><a href="#fn:eu-authority" class="footnote">1</a></sup> for cross-border rail traffic in Europe,
+mandated under the European Union (EU) law,
+to devise the technical and legal framework for supporting harmonised
+and safe cross-border railway operations.</p>
+
+      <!-- What is the problem?      -->
+      <p>The European railway ecosystem
+presents a particularly challenging scenario for interoperability,
+not only regarding physical aspects (e.g., infrastructure, energy systems, etc.) but also digital ones (e.g., information).
+Multiple organisations, such as Infrastructure Managers<sup id="fnref:im" role="doc-noteref"><a href="#fn:im" class="footnote">2</a></sup> (IMs)
+and Railway Undertakings<sup id="fnref:ru" role="doc-noteref"><a href="#fn:ru" class="footnote">3</a></sup> (RUs) <span class="references">[<a href="#ref-2">2</a>]</span>,
+need to interact and exchange information to ensure safe cross-border railway operations.
+These organisations rely on different information management systems
+from multiple vendors, that are often incompatible with each other.
+To increase digital interoperability
+among heterogeneous data and information systems,
+ERA supports and maintains a set of <a href="https://www.era.europa.eu/registers_en">base registries</a><sup id="fnref:base-registry" role="doc-noteref"><a href="#fn:base-registry" class="footnote">4</a></sup>,
+in the form of relational databases,
+where organisations input and access
+the different aspects of the information they manage and require.</p>
+
+      <p>However, following such traditional application-centric approach
+lead to isolated digital environments
+that consequently add barriers to digital interoperability.
+Tightly coupling base registries to the applications that operate over them,
+triggered the proliferation of often overlapping
+and difficult to manage data models hidden inside application code,
+which also increased the cost of maintenance and innovation.
+Moreover, stakeholder organisations such as IMs,
+are required to report the same information multiple times for different registries,
+increasing the probability of data inconsistency issues,
+while adding more costs to IMs due to duplicated efforts.</p>
+
+      <!-- What is my solution?      -->
+      <p>To address these issues,
+we propose a digital interoperability strategy for ERA,
+that adheres to the <a href="https://www.w3.org/DesignIssues/LinkedData.html">Linked Data principles</a><sup id="fnref:ld-principles" role="doc-noteref"><a href="#fn:ld-principles" class="footnote">5</a></sup> <span class="references">[<a href="#ref-3">3</a>]</span>
+and relies on standard Semantic Web <span class="references">[<a href="#ref-4">4</a>]</span> technologies.
+We built the foundations to establish a <em>semantic layer</em> for data integration within the agency,
+initially spanning three different <a href="https://www.era.europa.eu/registers_en">base registries</a><sup id="fnref:era-registries" role="doc-noteref"><a href="#fn:era-registries" class="footnote">6</a></sup>:,
+Register of Infrastructure (RINF),
+Register of Authorized Types of Vehicles (ERATV)
+and the Centralized Virtual Vehicle Register (ECVVR).
+We validate the usefulness of the approach
+by reusing the produced semantic data to support route compatibility checks (RCC),
+a highly-demanded use case in the railway domain.
+The RCC use case is stipulated and specified in EU regulations 2016/797 and 2019/773 <span class="references">[<a href="#ref-5">5</a>, <a href="#ref-6">6</a>]</span>
+and was so far, unsupported by ERA
+due to interoperability issues among base registries.
+Additionally, we show the flexibility of graph-based data models,
+by integrating an additional external data source
+that complement the resulting Knowledge Graph.</p>
+
+      <p>The contributions of this paper include
+(i) an <a href="http://era.ilabt.imec.be/era-vocabulary/index-en.html">official ontology</a><sup id="fnref:era-ontology" role="doc-noteref"><a href="#fn:era-ontology" class="footnote">7</a></sup>, modelling railway infrastructure aspects (e.g. topological, functional, etc.), rolling stock and authorized vehicle types, and 28 independently managed reference datasets;
+(ii) a public and reusable <a href="http://era.ilabt.imec.be/">RDF Knowledge Graph</a><sup id="fnref:era-kg" role="doc-noteref"><a href="#fn:era-kg" class="footnote">8</a></sup> with 13.8 million triples about the European railway infrastructure and more than 800 thousand rolling stocks;
+(iii) a cost-efficient system architecture that enables high-flexibility for use case support; and
+(iv) an open source and <a href="http://era.ilabt.imec.be/test/compatibility-check-demo/">RDF native Web application</a><sup id="fnref:era-ui" role="doc-noteref"><a href="#fn:era-ui" class="footnote">9</a></sup> to support and process RCC queries.</p>
+
+      <!-- What comes after my solution?      -->
+
+      <p>This work demonstrates how data-centric system design,
+powered by Semantic Web technologies,
+provides a framework to achieve data interoperability
+and unlock new and innovative use cases and applications.
+The results of the work presented in this paper
+had a <a href="https://www.era.europa.eu/sites/default/files/agency/docs/decision/decision_n250_annex1_linked_data_en.pdf">strong impact on ERA</a><sup id="fnref:era-decision" role="doc-noteref"><a href="#fn:era-decision" class="footnote">10</a></sup>,
+which decided on making Semantic Web technologies
+the default setting for any future development of data,
+registers and specifications, under the agency’s remit,
+for data exchange mandated by the EU legal framework.
+The next steps, which are already underway,
+include further extending the ontology
+to consider additional aspects,
+aligned with the requirements of the railway domain
+and evolving the system architecture
+towards a production-ready solution,
+fully integrated with the data management workflows of ERA.</p>
+
+      <!-- Outline of the paper      -->
+      <p>The remainder of this paper is organized as follows.
+Section 2 presents an overview of related work in the context
+of modelling approaches and interoperability for the railway domain.
+Section 3, describes the RCC use case its requirements.
+Section 4 gives an overview and description
+of our proposed solution architecture components.
+Section 5 discusses the advantages and limitations of the approach,
+and Section 6 presents our conclusions and perspectives for future work.</p>
+
+    </div>
+</section>
+
+  <section id="related-work" inlist="" rel="schema:hasPart" resource="#related-work">
+<div datatype="rdf:HTML" property="schema:description">
+      <h2 property="schema:name">Related Work</h2>
+
+      <p>In this section, we present different (semantic) data models
+to describe the railway domain focusing on different aspects of the domain
+and motivated by different use cases.
+Also existing related work
+applying semantic technologies in the railway domain.
+We studied these models,
+aiming on reusing as much as possible
+their embedded domain-specific knowledge (e.g. definitions, categorizations, naming conventions, etc.),
+during the creation of ERA’s ontology.</p>
+
+      <p>Multiple domain data models were proposed (some still under active development),
+to bridge the interoperability challenges
+by uniformly describing the different technical aspects related to the railway domain.
+However, most lack semantic definitions
+that promote/guarantee the use of persistent identifiers across data sources,
+hindering interoperability when exchanging data across organizations.
+Available models range from company-specific
+to industrial consortium-driven standardization efforts.
+For example, the <em>Informatie Model Spoor</em> (<a href="https://confluence.rigd-loxia.nl/display/IMSP/IMSpoor+Publicatie+Home">IMSpoorXML</a><sup id="fnref:imspoor" role="doc-noteref"><a href="#fn:imspoor" class="footnote">11</a></sup>),
+developed by the Dutch IM ProRail,
+provides an XML Schema-based model with integrated
+functional and geographic information about the railway infrastructure.
+IMSpoorXML is currently used within ProRail
+and is under active maintenance and development.
+The International Railway Standard IRS:30100 <a href="http://www.railtopomodel.org/en/download/irs30100-apr16-7594BCA1524E14224D0.html?file=files/download/RailTopoModel/180416_uic_irs30100.pdf">RailTopoModel</a><sup id="fnref:rtm" role="doc-noteref"><a href="#fn:rtm" class="footnote">12</a></sup><span class="references">[<a href="#ref-8">8</a>]</span>
+was developed under patronage of the International Union of Railways (UIC)
+and provides a systemic UML-based model
+for describing the topological aspects of railway infrastructure.
+It relies on the <em>connexity graph</em> mathematical concept <span class="references">[<a href="#ref-9">9</a>]</span>
+to describe the interconnection of the different railway network elements.
+Implementations of RailTopoModel include
+<a href="https://wiki3.railml.org/wiki/Main_Page">RailML</a><sup id="fnref:railml" role="doc-noteref"><a href="#fn:railml" class="footnote">13</a></sup> <span class="references">[<a href="#ref-10">10</a>]</span>
+and the <a href="https://dataprep.eulynx.eu/2020-10/index.htm">EULYNX</a><sup id="fnref:eulynx" role="doc-noteref"><a href="#fn:eulynx" class="footnote">14</a></sup> initiative,
+both currently developed by industrial consortiums.</p>
+
+      <p>The use of semantic technologies,
+for modelling the railway domain is not new.
+In 2011, the results of the EU project InteGRail,
+included an ontology integrating the major railway sub-systems,
+to achieve higher levels of performance in terms of capacity,
+average speed and punctuality, safety and the optimised usage of resources
+in railway systems <span class="references">[<a href="#ref-11">11</a>]</span>.
+Smart Rail is another EU project that applied semantic technologies
+for modelling more organizational aspects of the railway domain.
+It produced an <a href="https://ontology.tno.nl/smart-rail/">ontology</a><sup id="fnref:smart-rail" role="doc-noteref"><a href="#fn:smart-rail" class="footnote">15</a></sup>,
+focused on modelling stakeholders and physical resources of the railway infrastructure.
+RaCoOn (Rail Core Ontologies) is a set of domain ontologies
+that model areas of the rail domain commonly used in railway data exchange <span class="references">[<a href="#ref-12">12</a>]</span>.
+An study of how Linked Data was applied
+in the British railway domain,
+highlights the reduction of costs
+as a consequence of more efficient data flows,
+and hints towards the need of increasing adoption from industry <span class="references">[<a href="#ref-13">13</a>]</span>.
+More recently, Bischof et al. <span class="references">[<a href="#ref-14">14</a>]</span> outlined
+the requirements and challenges to define an open
+standard ontology for railway topologies based on existing standards.
+None of these approaches evolved beyond academic exercises
+and the produced ontologies are currently unmaintained or no longer available.
+In contrast, one of the main goals of ERA,
+as an European authority for the domain,
+is to provide a fully supported and open reference ontology
+not only for internal data management operations
+but targeting also its adoption and extension
+by the stakeholders of the railway domain,
+as an asset that supports their own use cases.</p>
+
+    </div>
+</section>
+
+  <section id="base-registries" inlist="" rel="schema:hasPart" resource="#base-registries">
+<div datatype="rdf:HTML" property="schema:description">
+      <h2 property="schema:name">Data Sources and Use Case</h2>
+
+      <p>In this section we present an overview of the different
+data sources reused by our proposed solution.
+We also describe the RCC use case
+as a main motivator for this work.</p>
+
+      <h3 id="eras-base-registries">ERA’s base registries</h3>
+
+      <p>Our approach considers, so far,
+3 of the <a href="https://www.era.europa.eu/registers_en">base registries</a> maintained by ERA,
+namely the Register of Infrastructure (RINF),
+the Register of Authorized Types of Vehicles (ERATV)
+and the Centralized Virtual Vehicle Register (ECVVR).
+These registries contain overlapping conceptual definitions,
+represented as properties of different type of entities,
+which are locked within their respective data silos.
+Next we give a brief description for each of these registries.</p>
+
+      <h4 id="register-of-infrastructure">Register of Infrastructure</h4>
+
+      <p>The European Register of Infrastructure (RINF)
+was introduced following Article 35
+of the EU regulation 2008/57/EC <span class="references">[<a href="#ref-15">15</a>]</span>.
+RINF contains the main features of fixed installations
+related to the subsystems of infrastructure,
+energy and parts of control-command and signaling.
+It publishes performance and technical characteristics
+mainly related to interfaces with rolling stock and operation.
+It is maintained as a relational database
+and its content is provided by the different European IMs,
+by means of a predefined <a href="https://www.era.europa.eu/sites/default/files/registers/docs/rinf_schema_en.xsd">XML Schema</a><sup id="fnref:rinf-xsd" role="doc-noteref"><a href="#fn:rinf-xsd" class="footnote">16</a></sup>.</p>
+
+      <h4 id="register-of-authorized-types-of-vehicles">Register of Authorized Types of Vehicles</h4>
+
+      <p>The European Register of Authorized Types of Vehicles (ERATV)
+is introduced by Article 5 of the EU regulation 2011/665/EU <span class="references">[<a href="#ref-16">16</a>]</span>.
+It aims to publish and keep an up-to-date set of authorized types of vehicles
+including information that references the technical specifications for each parameter.
+ERATV is maintained as a relational database
+populated through a Web application by multiple authorizing entities.
+ERATV provides also additional information for a certain vehicle type,
+such as manufacturing country, manufacturer, category
+and different physical and operational parameters.</p>
+
+      <h4 id="centralized-virtual-vehicle-register">Centralized Virtual Vehicle Register</h4>
+      <p>The European Centralised Virtual Vehicle Register (ECVVR)
+is a base registry maintained by ERA,
+in accordance with the EU regulation 2018/1614 <span class="references">[<a href="#ref-17">17</a>]</span>.
+ECVVR defines a decentralized architecture
+for information search and retrieval of rolling stock data,
+where each Member State hosts and publishes their own national vehicle registry(ies),
+accessible through Web-based interfaces.</p>
+
+      <h3 id="external-data-source">External data source</h3>
+
+      <p>There are known limitations for ERA’s base registries,
+as is the case of RINF and the limited granularity
+it gives over the railway topology.
+RINF provides a view over the railway infrastructure,
+commonly referred as a meso-level view<sup id="fnref:levels" role="doc-noteref"><a href="#fn:levels" class="footnote">17</a></sup>,
+where complex topological structures inside stations, junctions, switches, etc.,
+are abstracted into single nodes in the network graph.
+Route calculations over this limited view,
+may wrongfully assume certain direction changes,
+not possible in the real world.
+Calculating end-to-end routes with high accuracy,
+requires further data about the connectivity within each network node.
+This connectivity issue currently stands as one of the main challenges,
+for an accurate and reliable data source
+description of the European railway infrastructure topology.
+For this reason we also consider an external data source,
+provided by the Dutch IM ProRail,
+which provides an additional topological description
+for addressing this issue limited to the region of Utrecht in The Netherlands.</p>
+
+      <h4 id="connectivity-data-in-the-utrecht-area">Connectivity data in the Utrecht area</h4>
+      <p>The Dutch IM ProRail, provided us with an additional data source
+for exploring an alternative solution for the lack of real information
+about the internal connectivity inside network nodes (also called operational points).
+It consists of a table that groups all the different permutations of incoming
+and outgoing tracks for a set of operational points, and states if they are connected or not.</p>
+
+      <figure id="fig-1">
+<img src="img/fig1.svg" alt="[Figure 1]" />
+<figcaption><span class="label">Fig. 1:</span> 
+a) shows a schematic diagram of an operational point where its internal connections are unknown.
+b) shows how this information can be completed from the data provided in Table 1.
+</figcaption>
+</figure>
+
+      <p>The operational point <em>OPx</em> (<a href="#fig-1">Figure 1a</a>),
+has two incoming tracks (<em>T1</em> and <em>T2</em>)
+coming from <em>OPy</em> and belonging to the national line <em>LineJ</em>.
+We know these are incoming tracks
+thanks to the logical direction defined for <em>LineJ</em>,
+despite <em>T1</em> being a bidirectional track.
+<em>OPx</em> also has two outgoing tracks (<em>Ta</em> and <em>Tb</em>),
+going towards <em>OPw</em> and belonging to another national line <em>LineK</em>.
+Based on this information we establish
+the correct connectivity that reflects real-world behavior.</p>
+
+      <figure id="table-1" class="table">
+
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align: center">IN_Line</th>
+              <th style="text-align: center">IN_OP</th>
+              <th style="text-align: center">IN_Track</th>
+              <th style="text-align: center">OP</th>
+              <th style="text-align: center">OUT_Track</th>
+              <th style="text-align: center">OUT_OP</th>
+              <th style="text-align: center">OUT_Line</th>
+              <th style="text-align: center">Connected</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center">LineJ</td>
+              <td style="text-align: center">OPy</td>
+              <td style="text-align: center">T1</td>
+              <td style="text-align: center">OPx</td>
+              <td style="text-align: center">Ta</td>
+              <td style="text-align: center">OPw</td>
+              <td style="text-align: center">LineK</td>
+              <td style="text-align: center"><strong>true</strong></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">LineJ</td>
+              <td style="text-align: center">OPy</td>
+              <td style="text-align: center">T1</td>
+              <td style="text-align: center">OPx</td>
+              <td style="text-align: center">Tb</td>
+              <td style="text-align: center">OPw</td>
+              <td style="text-align: center">LineK</td>
+              <td style="text-align: center"><strong>true</strong></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">LineJ</td>
+              <td style="text-align: center">OPy</td>
+              <td style="text-align: center">T2</td>
+              <td style="text-align: center">OPx</td>
+              <td style="text-align: center">Ta</td>
+              <td style="text-align: center">OPw</td>
+              <td style="text-align: center">LineK</td>
+              <td style="text-align: center"><strong>false</strong></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">LineJ</td>
+              <td style="text-align: center">OPy</td>
+              <td style="text-align: center">T2</td>
+              <td style="text-align: center">OPx</td>
+              <td style="text-align: center">Tb</td>
+              <td style="text-align: center">OPw</td>
+              <td style="text-align: center">LineK</td>
+              <td style="text-align: center"><strong>true</strong></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <figcaption>
+          <p><span class="label">Table 1:</span> All the possible permutations
+between incoming and outgoing tracks of OPx,
+plus a column that states if there is a possible connection between two pairs of tracks.</p>
+        </figcaption>
+      </figure>
+
+      <h3 id="use-case-route-compatibility-check">Use Case: Route Compatibility Check</h3>
+
+      <p>Article 23 (point b) of the European regulation 2016/797 stipulates <span class="references">[<a href="#ref-5">5</a>]</span> that:</p>
+
+      <p>“<em>Before a railway undertaking uses a vehicle in the area of use specified in its authorisation for placing on the market, it shall check: …(b) that the vehicle is compatible with the route on the basis of the infrastructure register, the relevant TSIs or any relevant information to be provided by the infrastructure manager free of charge and within a reasonable period of time, where such a register does not exist or is incomplete</em>”</p>
+
+      <p>The specific procedures for assessing
+if a certain vehicle is compatible with a certain route,
+are further specified by the Annex D1
+of the EU regulation 2019/773 <span class="references">[<a href="#ref-6">6</a>]</span>.
+These specifications directly refer to
+specific data properties within RINF and ERATV,
+of 22 different technical aspects
+that need to be compared to determine if there is technical compatibility.
+This specification already highlights a clear need for interoperability
+at least between RINF and ERATV,
+which we address with the proposed ontology and derived Knowledge Graph.</p>
+
+      <p>To determine if a certain vehicle type
+is compatible with a certain route,
+is necessary to first find possible routes through the railway infrastructure,
+which involves a very particular type of queries,
+namely graph path finding queries.
+The standard query language for RDF graphs (SPARQL)
+does not support finding complex relation paths between RDF entities <span class="references">[<a href="#ref-18">18</a>]</span>.
+The Property Paths querying syntax, introduced in SPARQL 1.1,
+only allows for testing path existence
+but falls short on counting and retrieving the actual paths between two nodes <span class="references">[<a href="#ref-19">19</a>]</span>,
+which is crucial for the RCC use case.
+Currently there exist non-standard extensions to SPARQL (e.g. <a href="https://docs.stardog.com/archive/7.5.0/query-stardog/path-queries">Stardog path queries</a><sup id="fnref:stardog" role="doc-noteref"><a href="#fn:stardog" class="footnote">18</a></sup>)
+that address this limitation they are not widely supported across RDF graph databases.
+We consider this limitation in our proposed architecture
+and propose an alternative solution (see <a href="#architecture">Section 4.2</a>) to non-standard SPARQL extensions
+and according to the current Web standards to prevent vendor lock in issues.</p>
+
+    </div>
+</section>
+
+  <section id="proposed-solution" inlist="" rel="schema:hasPart" resource="#proposed-solution">
+<div datatype="rdf:HTML" property="schema:description">
+      <h2 property="schema:name">Proposed Solution</h2>
+
+      <p>Considering the interoperability obstacles that exist among
+the base registries maintained by ERA,
+we propose and design a solution architecture,
+capable of creating a semantic interoperability layer
+for data integration over them.
+Moreover, we exploit the inherent flexibility
+of graph-based data models to also include an external data source,
+that enriches the resulting Knowledge Graph (KG)
+and addresses intrinsic limitations of the original base registries.
+The proposed architecture relies on an ontology,
+defined to cover, but not limited to,
+the explicit interoperability requirements brought forth by the RCC use case.
+The architecture implements an ETL (Extract Transform Load)-based pipeline
+that relies on a fully declarative approach
+for the KG generation process,
+and leverages fundamental Web principles such as caching,
+to reduce computational infrastructure costs
+while maintaining a high querying flexibility.</p>
+
+      <p>In this section we present a description
+of the main architectural components of our proposed solution.
+We describe the proposed ontology and
+give an full overview of the solution architecture,
+which includes a fully functional application to support
+route compatibility checks (<a href="http://era.ilabt.imec.be/test/compatibility-check-demo/">available online</a><sup id="fnref:era-rcc" role="doc-noteref"><a href="#fn:era-rcc" class="footnote">19</a></sup>).</p>
+
+      <h3 id="the-era-vocabulary">The ERA Vocabulary</h3>
+
+      <p>Our proposed ontology, namely the <a href="http://era.ilabt.imec.be/era-vocabulary/index-en.html">ERA Vocabulary</a><sup id="fnref:era-ontology:1" role="doc-noteref"><a href="#fn:era-ontology" class="footnote">7</a></sup>,
+was created in a collaborative effort including
+domain experts from ERA, ProRail, SNCF
+and Semantic Web experts from DG DIGIT and IDLab-imec.
+The ERA Vocabulary provides unique identifiers
+and semantic definitions for concepts and properties, common to the railway domain.
+We make its documentation available online
+using Widoco <span class="references">[<a href="#ref-20">20</a>]</span> as a template generator.
+The source files are available in a public <a href="https://github.com/julianrojas87/era-vocabulary/tree/master">GitHub repository</a><sup id="fnref:era-vocab" role="doc-noteref"><a href="#fn:era-vocab" class="footnote">20</a></sup>.</p>
+
+      <figure id="fig-2">
+<img src="img/fig2.svg" alt="[Figure 2]" />
+<figcaption><span class="label">Fig. 2:</span> 
+Layered data model of the ERA Vocabulary.
+</figcaption>
+</figure>
+
+      <p>Following Semantic Web best practices,
+the ontology reuses external ontologies such as
+OGC GeoSPARQL, Schema.org and
+the EU publications office <a href="http://publications.europa.eu/resource/authority/country">authority table</a><sup id="fnref:country" role="doc-noteref"><a href="#fn:country" class="footnote">21</a></sup> for country definitions.
+It defines a layered model (see <a href="#fig-2">Figure 2</a>),
+inspired from RINF’s relational model,
+where the topological and functional aspects of the railway infrastructure
+are defined by independent entity types.
+Two layers are defined: <em>abstraction</em> and <em>implementation</em>.
+The <em>abstraction</em> layer defines logical entities
+form the network topology graph, with <em>era:NodePorts</em> acting as nodes
+and both <em>era:MicroLinks</em> and <em>era:InternalNodeLinks</em>  acting as edges.
+The <em>implementation</em> layer, represents concrete
+and functional objects in the real world, such as tracks,
+operational points (stations, switches, etc.) and vehicles (types).
+The link between these two layers is given by
+the <em>era:MicroNode</em> - <em>era:OperationalPoint</em> and <em>era:MicroLink</em> - <em>era:Track</em> relationships.</p>
+
+      <p>Additionally, 28 <a href="http://era.ilabt.imec.be/era-vocabulary/era-skos#">reference datasets</a><sup id="fnref:era-skos" role="doc-noteref"><a href="#fn:era-skos" class="footnote">22</a></sup>
+were extracted from the base registries
+and defined as SKOS controlled vocabularies.
+They contain definitions for different domain-related technical aspects,
+which are envisioned to be independently managed by relevant authorities.</p>
+
+      <h3 id="architecture">Architecture Overview</h3>
+
+      <p>Our proposed solution architecture is composed by 4 main modules (see <a href="#fig-3">Figure 3</a>),
+namely the <em>Data Sources</em>, <em>KG Generation</em>, <em>KG Querying</em> and <em>User Application</em> modules.
+The <em>Data Sources</em> module represents the considered data sources
+(previously described in <a href="#base-registries">Section 3</a>).
+The components from the <em>KG Generation</em> module,
+access the data sources to produce the RDF triples that compose the ERA KG.
+The ERA KG is published and made available for querying by the <em>KG Querying</em> module,
+which provides the necessary interfaces
+for the <em>User Application</em> module to support specific use cases.
+Next, we provide a description and the rationale behind these modules.</p>
+
+      <figure id="fig-3">
+<img src="img/fig3.svg" alt="[Figure 3]" />
+<figcaption><span class="label">Fig. 3:</span> 
+Overview of the proposed solution architecture
+for semantic data interoperability across ERA&#8217;s base registries.
+</figcaption>
+</figure>
+
+      <h4 id="kg-generation">KG Generation</h4>
+      <p>The KG generation process in our solution
+follows an ETL-based approach and uses the RML <span class="references">[<a href="#ref-21">21</a>]</span> technology stack
+for declaratively generating the RDF triples of the ERA Knowledge Graph.
+RML was selected for handling heterogeneous data sources,
+which in our case are relational DBs and CSV files,
+but XML Schema-based data sources (e.g., RailML) are also envisioned as a next step.
+The steps followed in this process are:</p>
+
+      <ol>
+        <li>The declarative RDF <a href="https://github.com/julianrojas87/era-data-mappings">mapping rules</a><sup id="fnref:mappings" role="doc-noteref"><a href="#fn:mappings" class="footnote">23</a></sup> specified in human-friendly YARRRML <span class="references">[<a href="#ref-22">22</a>]</span> syntax.</li>
+        <li>YARRRML rules are transformed to RML using the yarrrml-parser Node.js application.</li>
+        <li>The <a href="https://github.com/RMLio/rmlmapper-java">RMLMapper</a><sup id="fnref:rml-mapper" role="doc-noteref"><a href="#fn:rml-mapper" class="footnote">24</a></sup>, a Java application that reads the specified data sources and produces RDF data according to the set of given rules.</li>
+        <li>The resulting KG is published and loaded in a triple store. At the time of writing the ERA KG, had a total of 13.8 million triples, which we also make available as a <a href="https://drive.google.com/file/d/1KofPzYx2ovgAz85rLuO5J98SEs2BjWbO/view?usp=sharing">raw data dump</a><sup id="fnref:raw-kg" role="doc-noteref"><a href="#fn:raw-kg" class="footnote">25</a></sup>.</li>
+      </ol>
+
+      <h4 id="kg-querying">KG Querying</h4>
+      <p>We published the ERA KG in two different triple stores (<a href="http://era.ilabt.imec.be/sparql">GraphDB</a><sup id="fnref:graphdb" role="doc-noteref"><a href="#fn:graphdb" class="footnote">26</a></sup> and <a href="https://linked.ec-dataplatform.eu/sparql?default-graph-uri=https%3A%2F%2Flinked.ec-dataplatform.eu%2Fera">Virtuoso</a><sup id="fnref:virtuoso" role="doc-noteref"><a href="#fn:virtuoso" class="footnote">27</a></sup>)
+to prove that our proposed solution is vendor-independent.
+This module includes one of the core components of the architecture:
+the ERA Geo-LDF, which is implemented as a <a href="https://github.com/julianrojas87/era-ldf/">Node.js application</a><sup id="fnref:geo-ldf" role="doc-noteref"><a href="#fn:geo-ldf" class="footnote">28</a></sup>.
+The main purpose of this component is exposing a Linked Data
+and Hypermedia-based API over the ERA KG.
+It builds on the Linked Data Fragments <span class="references">[<a href="#ref-23">23</a>]</span> approach
+to provide metadata annotated fragments (tiles) of the ERA KG,
+based on a predefined geospatial pattern.
+It follows the <a href="https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames">slippy maps specification</a><sup id="fnref:slippy" role="doc-noteref"><a href="#fn:slippy" class="footnote">29</a></sup>,
+where the grid-based partition of the world
+is specified based on a zoom level <em>z</em> and the <em>x</em> and <em>y</em> cartesian coordinates.
+A live example of a tile for the area of Brussels can be accessed on <a href="http://era.ilabt.imec.be/ldf/sparql-tiles/implementation/10/524/343">http:/​/​era.ilabt.imec.be/ldf/sparql-tiles/implementation/10/524/343</a>.</p>
+
+      <p>The tiles are built by the ERA Geo-LDF component via
+template SPARQL queries that select and filter the entities
+based on their geospatial properties.
+In this way, client applications can request relevant data
+for their purposes and since the API returns unmodified triples from the KG,
+further querying and processing becomes possible on the client-side.
+Following this approach, we address the limitation
+of performing graph path finding queries directly on the SPARQL endpoints.
+Our client application implements a shortest-path algorithm
+and proceeds to download the relevant tiles based on
+the geospatial information given by origin-destination queries.
+Furthermore, tiles can be cached both on client- and server-side,
+which reduces the overall computational load on the server
+and improves query performance for client applications.</p>
+
+      <h4 id="user-application">User Application</h4>
+      <p>This module represents any user-oriented applications
+that would perform querying tasks over the ERA KG to support a given use case.
+So far, we developed a <a href="https://github.com/julianrojas87/era-compatibility-check">React-based Web application</a><sup id="fnref:era-ui:1" role="doc-noteref"><a href="#fn:era-ui" class="footnote">9</a></sup>
+for supporting the RCC use case
+and demonstrating the achieved data interoperability via the ERA KG.
+The application allows users to select
+an origin-destination pair of operational points (visible in map-based UI)
+to calculate one or more possible routes between them.
+Once selected, it proceeds to download the relevant KG tile fragments
+and perform the path finding process.
+It handles RDF triples natively and implements the A* <span class="references">[<a href="#ref-24">24</a>]</span> and Yen’s <span class="references">[<a href="#ref-25">25</a>]</span> algorithms
+for graph shortest path and top-k shortest path calculations respectively.
+Once a route is found, users may select a vehicle type or also a specific vehicle instance,
+for which the compatibility checks will be performed.
+Currently the application implements compatibility evaluation
+for 15 different parameters of both track sections and vehicle (types).
+The users can also visualize the internal connectivity
+inside the operational points that form part of a calculated route,
+by means of a schematic diagram,
+that shows the possible internal connections defined in the ERA KG.
+This feature is particularly interesting for operational points
+around the city of Utrecht in The Netherlands,
+considering the additional data source from ProRail (<a href="#base-registries">Section 3</a>),
+that was integrated into the KG.</p>
+
+      <figure id="fig-4">
+<img src="img/fig4.svg" alt="[Figure 4]" />
+<figcaption><span class="label">Fig. 4:</span> 
+Screenshot of the RCC Web application showing a route calculated from the <a href="https://linked.ec-dataplatform.eu/describe/?url=http%3A%2F%2Fera.europa.eu%2Fimplementation%23OP_FR0000003173">Charles de Gaulle airport</a> in Paris to the <a href="https://linked.ec-dataplatform.eu/describe/?url=http%3A%2F%2Fera.europa.eu%2Fimplementation%23OP_NLSHL">Schipol airport</a> in Amsterdam. On the lower left panel, the results of the compatibility check process are shown for the <a href="https://linked.ec-dataplatform.eu/describe/?url=http%3A%2F%2Fera.europa.eu%2Fimplementation%23VT_13-018-0013-0-001">TGV Thalys PBKA</a> vehicle type.
+</figcaption>
+</figure>
+
+    </div>
+</section>
+
+  <section id="discussion" inlist="" rel="schema:hasPart" resource="#discussion">
+<div datatype="rdf:HTML" property="schema:description">
+      <h2 property="schema:name">Discussion</h2>
+
+      <p>The implementation of our proposed solution architecture
+allowed us to achieve semantic interoperability
+over the considered data sources,
+which stood as independent and disconnected data silos before.
+Our architecture relies entirely on semantic web technologies and tools,
+starting from the KG generation process
+and ending with a RDF native Web application
+that supports the addressed RCC use case.</p>
+
+      <h3 id="solution-features">Solution Features</h3>
+
+      <p>Next we outline the main features of our proposed solution:</p>
+
+      <h4 id="fully-declarative-kg-generation">Fully declarative KG generation</h4>
+
+      <p>One key feature of our proposed solution
+relates to the ERA KG generation process,
+which is accomplished following a fully declarative approach.
+In other words, no pre-processing steps nor dedicated software/scripts
+are required to generate the RDF triples of the ERA KG.
+The KG generation rules are defined as RML mapping rules,
+which are executed by an existing and general purpose engine,
+that follows the given rules to produce the desired RDF triples.
+This feature has an important value from a data governance perspective,
+considering that no additional ad hoc software needs to be maintained.
+The RML mapping rules become the central resource for the ERA KG generation process,
+which can be adjusted or extended to include additional data sources,
+with significantly less effort compared to developing and maintaining additional software
+for every new data source to be included in the ERA KG.
+Furthermore, the mappings can be reused and adapted by IMs
+to produce their own internal KGs.</p>
+
+      <h4 id="kg-enrichment-flexibility">KG enrichment flexibility</h4>
+
+      <p>We were also able to explore and alternative solution
+to integrate additional data originated directly from an IM,
+to address the missing connectivity issue of the railway infrastructure.
+This approach demonstrated the flexibility
+that graph-based data models hold,
+considering that adding additional data sources
+requires significantly less effort,
+than for example, altering a relational data model,
+potentially introducing breaking changes for the applications that depend on it.</p>
+
+      <h4 id="cost-efficient-kg-publishing-and-quering">Cost-efficient KG publishing and quering</h4>
+
+      <p>Our architecture design was made,
+with data publishing and querying cost-efficiency as a guiding principle.
+As described in <a href="#architecture">Section 4.2</a>,
+the ERA KG is published on triple stores with support for SPARQL querying.
+However the user application that supports the RCC use case
+does not perform direct SPARQL queries over these triple stores.
+Instead, it downloads specific parts of the KG via an API,
+over which it applies its business logic.
+Such an approach is no different
+to traditional REST-based application design over relational databases,
+where applications are given access to data via APIs only,
+and do not have unbounded querying access to the database(s) <span class="references">[<a href="#ref-26">26</a>, <a href="#ref-27">27</a>]</span>.
+In contrast to most API implementations, the APIs implemented in this architecture,
+follow the hypermedia constraints defined by REST,
+providing self-describing data responses via hypermedia metadata controls.
+In other words, the API data responses include additional metadata
+that describe how it can be used by client applications
+to retrieve more relevant data for a particular query.
+Such descriptions enable the creation of smarter
+and more autonomous client applications,
+avoiding the need of hard-coding
+the application according to specific API interfaces.</p>
+
+      <p>More importantly the API design in this architecture,
+has been done to maximize the cacheability of API responses.
+By following a geospatial fragmentation approach,
+which suits the RCC use case,
+the API publishes fragments of the ERA KG
+that can be cached both on client- and server-side.
+This further reduces the computational cost on the triple stores,
+which only need to process once the query for a given fragment.
+A client application that has requested a certain data fragment
+does not need to request it again (client cache)
+and has full flexibility to perform any type of further processing on the data it contains.
+When another client application needs access to the same type of data,
+it can rely on server-side cached API responses
+which also improve overall application performance.</p>
+
+      <h4 id="shortest-path-querying-over-an-rdf-kg">Shortest path querying over an RDF KG</h4>
+      <p>The ability to indirectly support calculation of path finding queries,
+is an important feature of our architectural design.
+Our approach not only, enables solving this particular type of queries,
+but also opens the door for clients
+to implement any path finding algorithm they prefer,
+and further customize them to better suit their requirements.
+Such level of specialization of algorithms
+is not always possible to be defined through general purpose query languages
+or it could potentially result in highly inefficient queries.</p>
+
+      <h3 id="limitations-and-open-challenges">Limitations and Open Challenges</h3>
+
+      <p>The identified limitations of our approach include:</p>
+
+      <h4 id="performance-of-long-distance-queries">Performance of long distance queries</h4>
+
+      <p>One of the main limitations of our proposed solution
+is related to the trade-off between
+server computational cost and query performance,
+that is introduced when shifting query processing tasks to the client.
+This is particularly visible when dealing with long distance route calculations,
+due to the increasing amount of data fragments
+that needs to be fetched and processed by the client.
+Different alternatives could be explored to address this limitation:</p>
+
+      <ul>
+        <li>
+          <p><em>Server-side route planning engine</em>: This is the most common approach followed by route planning solutions.
+It requires setting a dedicated engine (e.g., <a href="https://pgrouting.org/">postGIS-based system</a><sup id="fnref:postgis" role="doc-noteref"><a href="#fn:postgis" class="footnote">30</a></sup>),
+which imports the whole topology graph
+and then is capable of executing a route planning algorithm over it.
+The drawbacks of this approach include
+the considerable increase of computational load for the server
+and less flexibility for client applications to select
+and tailor the algorithms for their own needs.
+But more importantly,
+available solutions do not support RDF data out of the box,
+which introduces an additional burden for the architecture
+by having to convert and keep in sync the ERA KG
+towards the required format of the route planning engine.</p>
+        </li>
+        <li>
+          <p><em>Non-standard Graph Database</em>: Another alternative is to replace
+the standard RDF triple store by a graph database that has support
+for route plan querying (e.g. <a href="https://docs.stardog.com/archive/7.5.0/query-stardog/path-queries">Stardog</a><sup id="fnref:stardog:1" role="doc-noteref"><a href="#fn:stardog" class="footnote">18</a></sup> or <a href="https://neo4j.com/docs/graph-data-science/current/algorithms/dijkstra-source-target/">Neo4J</a><sup id="fnref:neo4j" role="doc-noteref"><a href="#fn:neo4j" class="footnote">31</a></sup> both with RDF support).
+Again the drawbacks of this approach are related to scalability
+and application flexibility, but they also may lead to vendor-locking issues,
+since they rely on non-standard solutions.</p>
+        </li>
+        <li>
+          <p><em>Speed-up Techniques</em>: The application of speed-up techniques for shortest path algorithms,
+such as Contraction Hierarchies <span class="references">[<a href="#ref-28">28</a>]</span>
+or Multilevel Dijkstra <span class="references">[<a href="#ref-29">29</a>]</span>, stands as a possible solution.
+These techniques rely on preprocessing steps
+that create summarizations of the graph topology,
+allowing to quickly compute long-distance path queries.
+They have been applied mostly to road networks graphs,
+where hierarchies of roads (highway, road, residential street, etc)
+can be used to create summaries for long distances.
+In principle they could also be applied to the railway topology graph.
+The drawbacks of these approaches are related to the introduction
+of additional complexity for creating the graph summaries
+that need to be managed and kept in sync with the original KG.
+However, they could still allow full flexibility for client applications
+to perform any business logic,
+since the summaries are only additional data that does not change
+the original RDF triples of the ERA KG.</p>
+        </li>
+      </ul>
+
+      <h4 id="kg-based-on-stale-sources">KG based on stale sources</h4>
+      <p>The KG generation process is periodically performed
+over stale versions of the base registry relational DBs.
+To accurately reflect the real state of the railway network,
+is necessary to capture in <em>real-time</em> the changes introduced into the source DBs,
+and immediately reflect them in the ERA KG.
+Other use cases such as signalling and interlocking,
+require precise and accurate data to guarantee safe vehicle operations.
+Approaches such as <a href="https://w3id.org/ldes/specification">Linked Data Event Streams</a>,
+remain to be investigated to support this requirements.</p>
+
+      <h4 id="hardcoded-compatibility-check-rules">Hardcoded compatibility check rules</h4>
+      <p>The compatibility check rules,
+were directly implemented into the source code of the RCC client application.
+This constitutes a limitation, given that it makes more difficult
+to maintain and evolve the rules.
+Also, it makes the rules to be indistinguishable from the application,
+hindering their potential reusability in other use cases.
+Alternatives to address this issue could explore
+the use of Notation3 or SHACL Rules
+to declaratively define the RCC rules,
+which can be then independently managed
+and published for applications such as the RCC client to consume and evaluate.</p>
+
+    </div>
+</section>
+
+  <section id="conclusion" inlist="" rel="schema:hasPart" resource="#conclusion">
+<div datatype="rdf:HTML" property="schema:description">
+      <h2 property="schema:name">Conclusion and Future Work</h2>
+
+      <p>The most important achievement of this work,
+is the strong impact it had on the <a href="https://www.era.europa.eu/sites/default/files/agency/docs/decision/decision_n250_annex1_linked_data_en.pdf">decision taken by ERA</a><sup id="fnref:era-decision:1" role="doc-noteref"><a href="#fn:era-decision" class="footnote">10</a></sup> to
+make Semantic Web technologies
+the default setting for any future development of data,
+registers and specifications, under the agency’s remit.
+Considering ERA’s position as an European authority
+this decision could potentially influence
+the different stakeholders in the railway domain, to take similar paths.</p>
+
+      <p>The results obtained from this work,
+demonstrated with a practical approach,
+how Semantic Web technologies enable higher data interoperability.
+Data integration is achieved at the <em>data level</em> (data-centric)
+instead of being locked into application-specific business logic (application-centric),
+opening the door for new and innovative use cases.
+We were able to create a semantic interoperability layer
+over the different considered data sources,
+which requires significantly less effort to be created and managed,
+compared to developing ad hoc applications
+and 1-to-1 interfaces between different information systems.
+Futhermore, this work also demonstrated
+that Semantic Web technologies can be used to create
+functional Web applications based on modern
+and developer-friendly frameworks such as React
+with little additional effort from a development perspective
+and in a reasonable time frame.</p>
+
+      <p>The choice of architecture design made for this prototype
+leverages HTTP caching mechanisms to achieve higher scalability
+while providing full querying flexibility to client applications.
+This is demonstrated by the ability of the RCC client application
+to perform route planning calculations over the ERA KG,
+which are not supported by standard RDF triple stores.
+Yet, this approach establishes a trade-off
+between scalability and flexibility vs. performance.
+Further optimizations are required to achieve production-level performance
+without losing the benefits of the proposed solution architecture.</p>
+
+      <p>For future work, we aim to explore how more granular descriptions
+of the railway topology can be integrated, to increase the reliability of the ERA KG.
+From an architectural perspective,
+stream-processing and KG virtualization approaches may be studied
+to support use cases with higher requirements on up-to-date data.</p>
+
+    </div>
+</section>
+
+  <section id="acknowledgements" inlist="" rel="schema:hasPart" resource="#acknowledgements">
+<div datatype="rdf:HTML" property="schema:description">
+      <h2 class="no-label-increment" property="schema:name">Acknowledgements</h2>
+
+      <p>The authors would like to extend their gratitude to <a href="https://www.prorail.nl/">ProRail</a>, <a href="https://www.sncf.com/en">SNCF</a>, <a href="https://www.banenor.no/">BANE NOR</a> <a href="https://eimrail.org/">EIM</a>, <a href="https://uiprail.org/">UIP</a>, <a href="http://www.cedex.es/CEDEX/lang_castellano/">CEDEX</a>, <a href="https://www.railml.org/en/">RailML</a>, <a href="https://www.eulynx.eu/">EULYNX</a>, the <a href="https://op.europa.eu/en/home">Publications Office of the EU</a> and the <a href="https://ec.europa.eu/isa2/actions/improving-cross-border-exchange-location-information_en">ELISE</a> action team for providing us with their invaluable data, expertise and feedback to make this work possible.</p>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+<section>
+<h2 id="references">References</h2>
+<dl class="references">
+  <dt id="ref-1">[1]</dt>
+  <dd resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0796" typeof="schema:CreativeWork">Council of European Union: Council regulation (EU) No 2016/796. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0796">https:/​/​eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0796</a> (2016).</dd>
+  <dt id="ref-2">[2]</dt>
+  <dd resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012L0034" typeof="schema:CreativeWork">Council of European Union: Council regulation (EU) No 2012/34. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012L0034">https:/​/​eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012L0034</a> (2016).</dd>
+  <dt id="ref-3">[3]</dt>
+  <dd resource="http://linkeddatabook.com/editions/1.0/" typeof="schema:Article">Heath, T., Bizer, C.: Linked Data: Evolving the Web into a Global Data Space. (2011).</dd>
+  <dt id="ref-4">[4]</dt>
+  <dd resource="http://www.sciam.com/article.cfm?articleID=00048144-10D2-1C70-84A9809EC588EF21" typeof="schema:Article">Berners-Lee, T., Hendler, J., Lassila, O.: The Semantic Web. Scientific American. 284, 34–43 (2001).</dd>
+  <dt id="ref-5">[5]</dt>
+  <dd resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016L0797" typeof="schema:CreativeWork">Council of European Union: Council regulation (EU) No 2016/797. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016L0797">https:/​/​eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016L0797</a> (2016).</dd>
+  <dt id="ref-6">[6]</dt>
+  <dd resource="https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj" typeof="schema:CreativeWork">Council of European Union: Council regulation (EU) No 2019/773. <a href="https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj">https:/​/​eur-lex.europa.eu/eli/reg_impl/2019/773/oj</a> (2019).</dd>
+  <dt id="ref-7">[7]</dt>
+  <dd resource="https://ec.europa.eu/isa2/sites/default/files/eif_brochure_final.pdf" typeof="schema:CreativeWork">Publications Office of the European Union: New European Interoperability Framework: Promoting seamless services and data flows for European public administrations. <a href="https://ec.europa.eu/isa2/sites/default/files/eif_brochure_final.pdf">https:/​/​ec.europa.eu/isa2/sites/default/files/eif_brochure_final.pdf</a> (2017).</dd>
+  <dt id="ref-8">[8]</dt>
+  <dd resource="#irs30100" typeof="schema:CreativeWork">RailTopoModel - Railway Infrastructure Topological Model. International Union of Railways, Paris, FR (2016).</dd>
+  <dt id="ref-9">[9]</dt>
+  <dd resource="#gely2010" typeof="schema:Article">Gély, L., Dessagne, G., Pesneau, P., Vanderbeck, F.: A multi scalable model based on a connexity graph representation. WIT Transactions on the Built Environment. 114, 193–204 (2010).</dd>
+  <dt id="ref-10">[10]</dt>
+  <dd resource="https://dx.doi.org/10.14311/APP.2017.11.0016" typeof="schema:Article">Hlubuček, A.: RailTopoModel and RailML 3 in Overall Context. Acta Polytechnica CTU Proceedings. 11, 16 (2017).</dd>
+  <dt id="ref-11">[11]</dt>
+  <dd resource="https://dx.doi.org/https://doi.org/10.1016/j.trc.2010.10.003" typeof="schema:Article">Verstichel, S., Ongenae, F., Loeve, L., Vermeulen, F., Dings, P., Dhoedt, B., Dhaene, T., Turck, F.D.: Efficient data integration in the railway domain through an ontology-based methodology. Transportation Research Part C: Emerging Technologies. 19, 617–643 (2011).</dd>
+  <dt id="ref-12">[12]</dt>
+  <dd resource="#tutcher2017" typeof="schema:Article">Tutcher, J., Easton, J., Roberts, C.: Enabling Data Integration in the Rail Industry Using RDF and OWL: The RaCoOn Ontology. ASCE-ASME Journal of Risk and Uncertainty in Engineering Systems, Part A: Civil Engineering. 3, (2017).</dd>
+  <dt id="ref-13">[13]</dt>
+  <dd resource="https://dx.doi.org/10.1109/BigData.2014.7004429" typeof="schema:Article">Morris, C., Easton, J., Roberts, C.: Applications of linked data in the rail domain. In: 2014 IEEE International Conference on Big Data (Big Data). pp. 35–41 (2014).</dd>
+  <dt id="ref-14">[14]</dt>
+  <dd resource="#bischof2020" typeof="schema:Article">Bischof, S., Schenner, G.: Towards a Railway Topology Ontology to Integrate and Query Rail Data Silos. In: SEMWEB (2020).</dd>
+  <dt id="ref-15">[15]</dt>
+  <dd resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32008L0057" typeof="schema:CreativeWork">Council of European Union: Council regulation (EU) No 2008/57. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32008L0057">https:/​/​eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32008L0057</a> (2008).</dd>
+  <dt id="ref-16">[16]</dt>
+  <dd resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0065" typeof="schema:CreativeWork">Council of European Union: Council regulation (EU) No 2011/65. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0065">https:/​/​eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0065</a> (2011).</dd>
+  <dt id="ref-17">[17]</dt>
+  <dd resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.268.01.0053.01.ENG&amp;toc=OJ:L:2018:268:TOC" typeof="schema:CreativeWork">Council of European Union: Council regulation (EU) No 2018/1614. <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.268.01.0053.01.ENG&amp;toc=OJ:L:2018:268:TOC">https:/​/​eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.268.01.0053.01.ENG&amp;toc=OJ:L:2018:268:TOC</a> (2018).</dd>
+  <dt id="ref-18">[18]</dt>
+  <dd resource="#gubichev2011" typeof="schema:Article">Gubichev, A., Neumann, T.: Path Query Processing on Very Large RDF Graphs. In: WebDB (2011).</dd>
+  <dt id="ref-19">[19]</dt>
+  <dd resource="https://dx.doi.org/10.1145/3132218.3132239" typeof="schema:Article">Savenkov, V., Mehmood, Q., Umbrich, J., Polleres, A.: Counting to k or How SPARQL1.1 Property Paths Can Be Extended to Top-k Path Queries. In: Proceedings of the 13th International Conference on Semantic Systems. pp. 97–103. Association for Computing Machinery, New York, NY, USA (2017).</dd>
+  <dt id="ref-20">[20]</dt>
+  <dd resource="https://dx.doi.org/10.5281/zenodo.4320190" typeof="schema:CreativeWork">Garijo, D., Geluk, J., Scharm, M., Ruiz-Iniesta, A., McBennett, P., Serafini, A., María, kartgk, Corcho, O., rpietzsch, Schneider, J., Leitschuh, J., Scrocca, M., Lefrançois, M., Garcia, M.A., Zack-83: dgarijo/Widoco: WIDOCO 1.4.15_1 (pre-release):  Namespace prefixes fixes and WebVowl update. <a href="https://doi.org/10.5281/zenodo.4320190">https:/​/​doi.org/10.5281/zenodo.4320190</a> (2020).</dd>
+  <dt id="ref-21">[21]</dt>
+  <dd resource="http://ceur-ws.org/Vol-1184/ldow2014_paper_01.pdf" typeof="schema:Article">Dimou, A., Vander Sande, M., Colpaert, P., Verborgh, R., Mannens, E., Van de Walle, R.: RML: A Generic Language for Integrated RDF Mappings of Heterogeneous Data. In: Bizer, C., Heath, T., Auer, S., and Berners-Lee, T. (eds.) Proceedings of the 7th Workshop on Linked Data on the Web (2014).</dd>
+  <dt id="ref-22">[22]</dt>
+  <dd resource="#heyvaert2018" typeof="schema:Article">Heyvaert, P., De Meester, B., Dimou, A., Verborgh, R.: Declarative Rules for Linked Data Generation at your Fingertips! In: Proceedings of the 15\textsuperscriptth ESWC: Posters and Demos (2018).</dd>
+  <dt id="ref-23">[23]</dt>
+  <dd resource="#verborgh2014" typeof="schema:Article">Verborgh, R., Vander Sande, M., Colpaert, P., Coppens, S., Mannens, E., Van de Walle, R.: Web-Scale Querying through Linked Data Fragments. In: Bizer, C., Heath, T., Auer, S., and Berners-Lee, T. (eds.) Proceedings of the 7\textsuperscriptth Workshop on Linked Data on the Web (2014).</dd>
+  <dt id="ref-24">[24]</dt>
+  <dd resource="https://dx.doi.org/10.1109/TSSC.1968.300136" typeof="schema:Article">Hart, P.E., Nilsson, N.J., Raphael, B.: A Formal Basis for the Heuristic Determination of Minimum Cost Paths. IEEE Transactions on Systems Science and Cybernetics. 4, 100–107 (1968).</dd>
+  <dt id="ref-25">[25]</dt>
+  <dd resource="http://www.jstor.org/stable/2629312" typeof="schema:Article">Yen, J.Y.: Finding the K Shortest Loopless Paths in a Network. Management Science. 17, 712–716 (1971).</dd>
+  <dt id="ref-26">[26]</dt>
+  <dd resource="#chaudhuri2000" typeof="schema:Article">Chaudhuri, S., Weikum, G.: Rethinking Database System Architecture: Towards a Self-Tuning RISC-Style Database System. In: Proceedings of the 26th International Conference on Very Large Data Bases. pp. 1–10. Morgan Kaufmann Publishers Inc., San Francisco, CA, USA (2000).</dd>
+  <dt id="ref-27">[27]</dt>
+  <dd resource="https://dx.doi.org/10.1145/514183.514185" typeof="schema:Article">Fielding, R.T., Taylor, R.N.: Principled Design of the Modern Web Architecture. ACM Trans. Internet Technol. 2, 115–150 (2002).</dd>
+  <dt id="ref-28">[28]</dt>
+  <dd resource="https://dx.doi.org/10.1145/2886843" typeof="schema:Article">Dibbelt, J., Strasser, B., Wagner, D.: Customizable Contraction Hierarchies. ACM J. Exp. Algorithmics. 21, (2016).</dd>
+  <dt id="ref-29">[29]</dt>
+  <dd resource="#delling2017" typeof="schema:Article">Delling, D., Goldberg, A., Pajor, T., Werneck, R.F.: Customizable Route Planning in Road Networks. Transp. Sci. 51, 566–591 (2017).</dd>
+</dl>
+</section>
+</footer>
+
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:eu-authority" role="doc-endnote">
+      <p>ERA becomes European authority for cross-border rail traffic in Europe: <a href="https://www.era.europa.eu/content/era-becomes-european-authority-cross-border-rail-traffic-europe_en" target="_blank">https:/​/​www.era.europa.eu/content/era-becomes-european-authority-cross-border-rail-traffic-europe_en</a> <a href="#fnref:eu-authority" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:im" role="doc-endnote">
+      <p>An Infrastructure Manager is defined as any body or firm responsible in particular for establishing, managing and maintaining railway infrastructure, including traffic management, control-command and signalling. <a href="#fnref:im" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:ru" role="doc-endnote">
+      <p>A Railway Undertaking is defined as any public or private licensed undertaking, the principal business of which is to provide services for the transport of goods and/or passengers by rail with a requirement that the undertaking ensure traction. <a href="#fnref:ru" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:base-registry" role="doc-endnote">
+      <p><em>“A base registry is  a  trusted  and  authoritative  source  of  information  which  can  and  should be digitally reused by others, where one organisation is responsible and accountable  for  the  collection,  use,  updating  and  preservation  of  information.”</em> <span class="references">[<a href="#ref-7">7</a>]</span> <a href="#fnref:base-registry" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:ld-principles" role="doc-endnote">
+      <p>Principles of Linked Data: <a href="https://www.w3.org/DesignIssues/LinkedData.html">https:/​/​www.w3.org/DesignIssues/LinkedData.html</a> <a href="#fnref:ld-principles" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:era-registries" role="doc-endnote">
+      <p>Base registries of ERA: <a href="https://www.era.europa.eu/registers_en">https:/​/​www.era.europa.eu/registers_en</a> <a href="#fnref:era-registries" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:era-ontology" role="doc-endnote">
+      <p><a href="http://era.ilabt.imec.be/era-vocabulary/index-en.html">http:/​/​era.ilabt.imec.be/era-vocabulary/index-en.html</a> <a href="#fnref:era-ontology" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:era-ontology:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:era-kg" role="doc-endnote">
+      <p><a href="http://era.ilabt.imec.be/">http:/​/​era.ilabt.imec.be/</a> <a href="#fnref:era-kg" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:era-ui" role="doc-endnote">
+      <p><a href="https://github.com/julianrojas87/era-compatibility-check">https:/​/​github.com/julianrojas87/era-compatibility-check</a> <a href="#fnref:era-ui" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:era-ui:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:era-decision" role="doc-endnote">
+      <p>ERA’s roadmap for Linked Data mainstreaming: <a href="https://www.era.europa.eu/sites/default/files/agency/docs/decision/decision_n250_annex1_linked_data_en.pdf">https:/​/​www.era.europa.eu/sites/default/files/agency/docs/decision/decision_n250_annex1_linked_data_en.pdf</a> <a href="#fnref:era-decision" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:era-decision:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:imspoor" role="doc-endnote">
+      <p><a href="https://confluence.rigd-loxia.nl/display/IMSP/IMSpoor+Publicatie+Home">https:/​/​confluence.rigd-loxia.nl/display/IMSP/IMSpoor+Publicatie+Home</a> <a href="#fnref:imspoor" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:rtm" role="doc-endnote">
+      <p>RailTopoModel specification<a href="http://www.railtopomodel.org/en/download/irs30100-apr16-7594BCA1524E14224D0.html?file=files/download/RailTopoModel/180416_uic_irs30100.pdf">http:/​/​www.railtopomodel.org/en/download/irs30100-apr16-7594BCA1524E14224D0.html?file=files/download/RailTopoModel/180416_uic_irs30100.pdf</a> <a href="#fnref:rtm" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:railml" role="doc-endnote">
+      <p><a href="https://wiki3.railml.org/wiki/Main_Page">https:/​/​wiki3.railml.org/wiki/Main_Page</a> <a href="#fnref:railml" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:eulynx" role="doc-endnote">
+      <p><a href="https://dataprep.eulynx.eu/2020-10/index.htm">https:/​/​dataprep.eulynx.eu/2020-10/index.htm</a> <a href="#fnref:eulynx" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:smart-rail" role="doc-endnote">
+      <p>Smart Rail ontology: <a href="https://ontology.tno.nl/smart-rail/">https:/​/​ontology.tno.nl/smart-rail/</a> <a href="#fnref:smart-rail" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:rinf-xsd" role="doc-endnote">
+      <p><a href="https://www.era.europa.eu/sites/default/files/registers/docs/rinf_schema_en.xsd">https:/​/​www.era.europa.eu/sites/default/files/registers/docs/rinf_schema_en.xsd</a> <a href="#fnref:rinf-xsd" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:levels" role="doc-endnote">
+      <p>See section 1.6 of <span class="references">[<a href="#ref-8">8</a>]</span> for a description of railway vie levels. <a href="#fnref:levels" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:stardog" role="doc-endnote">
+      <p><a href="https://docs.stardog.com/archive/7.5.0/query-stardog/path-queries">https:/​/​docs.stardog.com/archive/7.5.0/query-stardog/path-queries</a> <a href="#fnref:stardog" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:stardog:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:era-rcc" role="doc-endnote">
+      <p><a href="http://era.ilabt.imec.be/test/compatibility-check-demo/">http:/​/​era.ilabt.imec.be/test/compatibility-check-demo/</a> <a href="#fnref:era-rcc" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:era-vocab" role="doc-endnote">
+      <p><a href="https://github.com/julianrojas87/era-vocabulary/tree/master">https:/​/​github.com/julianrojas87/era-vocabulary/tree/master</a> <a href="#fnref:era-vocab" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:country" role="doc-endnote">
+      <p><a href="http://publications.europa.eu/resource/authority/country">http:/​/​publications.europa.eu/resource/authority/country</a> <a href="#fnref:country" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:era-skos" role="doc-endnote">
+      <p><a href="http://era.ilabt.imec.be/era-vocabulary/era-skos#">http:/​/​era.ilabt.imec.be/era-vocabulary/era-skos#</a> <a href="#fnref:era-skos" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:mappings" role="doc-endnote">
+      <p><a href="https://github.com/julianrojas87/era-data-mappings">https:/​/​github.com/julianrojas87/era-data-mappings</a> <a href="#fnref:mappings" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:rml-mapper" role="doc-endnote">
+      <p><a href="https://github.com/RMLio/rmlmapper-java">https:/​/​github.com/RMLio/rmlmapper-java</a> <a href="#fnref:rml-mapper" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:raw-kg" role="doc-endnote">
+      <p><a href="https://drive.google.com/file/d/1KofPzYx2ovgAz85rLuO5J98SEs2BjWbO/view?usp=sharing">https:/​/​drive.google.com/file/d/1KofPzYx2ovgAz85rLuO5J98SEs2BjWbO/view?usp=sharing</a> <a href="#fnref:raw-kg" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:graphdb" role="doc-endnote">
+      <p><a href="http://era.ilabt.imec.be/sparql">http:/​/​era.ilabt.imec.be/sparql</a> <a href="#fnref:graphdb" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:virtuoso" role="doc-endnote">
+      <p><a href="https://linked.ec-dataplatform.eu/sparql?default-graph-uri=https%3A%2F%2Flinked.ec-dataplatform.eu%2Fera">https:/​/​linked.ec-dataplatform.eu/sparql?default-graph-uri=https%3A%2F%2Flinked.ec-dataplatform.eu%2Fera</a> <a href="#fnref:virtuoso" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:geo-ldf" role="doc-endnote">
+      <p><a heref="https://github.com/julianrojas87/era-ldf/">https:/​/​github.com/julianrojas87/era-ldf/</a> <a href="#fnref:geo-ldf" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:slippy" role="doc-endnote">
+      <p><a href="https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames">https:/​/​wiki.openstreetmap.org/wiki/Slippy_map_tilenames</a> <a href="#fnref:slippy" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:postgis" role="doc-endnote">
+      <p><a href="https://pgrouting.org/">https:/​/​pgrouting.org/</a> <a href="#fnref:postgis" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:neo4j" role="doc-endnote">
+      <p><a href="https://neo4j.com/docs/graph-data-science/current/algorithms/dijkstra-source-target/">https:/​/​neo4j.com/docs/graph-data-science/current/algorithms/dijkstra-source-target/</a> <a href="#fnref:neo4j" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper.aux
+The style file: splncs04.bst
+Database file #1: references.bib
+Warning--entry type for "garijo2020" isn't style-file defined
+--line 154 of file references.bib
+Warning--empty journal in heath2011
+Warning--empty author in irs30100
+You've used 29 entries,
+            2850 wiz_defined-function locations,
+            754 strings with 9911 characters,
+and the built_in function-call counts, 15134 in all, are:
+= -- 1171
+> -- 505
+< -- 23
++ -- 210
+- -- 178
+* -- 957
+:= -- 1925
+add.period$ -- 27
+call.type$ -- 29
+change.case$ -- 192
+chr.to.int$ -- 0
+cite$ -- 31
+duplicate$ -- 1383
+empty$ -- 1405
+format.name$ -- 197
+if$ -- 3291
+int.to.chr$ -- 0
+int.to.str$ -- 29
+missing$ -- 277
+newline$ -- 93
+num.names$ -- 58
+pop$ -- 580
+preamble$ -- 1
+purify$ -- 146
+quote$ -- 0
+skip$ -- 406
+stack$ -- 0
+substring$ -- 713
+swap$ -- 750
+text.length$ -- 23
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 116
+warning$ -- 2
+while$ -- 108
+width$ -- 31
+write$ -- 277
+(There were 3 warnings)

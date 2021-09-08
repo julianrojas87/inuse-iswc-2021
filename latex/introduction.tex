@@ -1,0 +1,93 @@
+% Context
+The establishment of an interoperable
+European railway area without frontiers,
+while guaranteeing railway operation safety,
+is the prime objective of the European Union Agency for Railways~(ERA)~\cite{eu-796-2016}.
+Since 2019 ERA became the European authority\footnote{ERA is the European authority for cross-border rail traffic in Europe: \url{https://www.era.europa.eu/content/era-becomes-european-authority-cross-border-rail-traffic-europe_en}}
+for cross-border rail traffic in Europe,
+mandated under the European Union (EU) law,
+to devise the technical and legal framework for supporting harmonised
+and safe cross-border railway operations.
+
+% What is the problem?
+The European railway ecosystem
+presents a particularly challenging scenario for interoperability,
+not only regarding physical aspects (e.g., infrastructure, energy systems, etc.) but also digital ones (e.g., information).
+Multiple organisations, such as Infrastructure Managers~(IMs)\footnote{An Infrastructure Manager is defined as any body or firm responsible in particular for establishing, managing and maintaining railway infrastructure, including traffic management, control-command and signalling.}
+and Railway Undertakings~(RUs)\footnote{A Railway Undertaking is defined as any public or private licensed undertaking, the principal business of which is to provide services for the transport of goods and/or passengers by rail with a requirement that the undertaking ensure traction.} \cite{eu-34-2012},
+need to interact and exchange information to ensure safe cross-border railway operations.
+These organisations rely on different information management systems
+from multiple vendors, that are often incompatible with each other.
+To increase digital interoperability
+among heterogeneous data and information systems,
+ERA supports and maintains a set of base registries\footnote{ \textit{``A base registry is  a  trusted  and  authoritative  source  of  information  which  can  and  should be digitally reused by others, where one organisation is responsible and accountable  for  the  collection,  use,  updating  and  preservation  of  information.''} \cite{eu-iop}},
+in the form of relational databases,
+where organisations input and access
+the different aspects of the information they manage and require.
+
+However, following such traditional approach
+lead to isolated digital environments
+that consequently added barriers to digital interoperability.
+Tightly coupling base registries to the applications that operate over them,
+triggered the proliferation of overlapping
+and difficult to manage data models hidden inside application code,
+which also increased maintenance and innovation costs.
+Moreover, stakeholder organisations such as IMs,
+have to report the same information multiple times for different registries,
+increasing the probability of data inconsistency issues,
+while adding more costs to IMs due to duplicated efforts.
+
+% What is my solution?
+To address these issues,
+we propose a digital interoperability strategy for ERA,
+that adheres to the Linked Data principles\footnote{Principles of Linked Data: \url{https://www.w3.org/DesignIssues/LinkedData.html}} \cite{heath2011}
+and relies on standard Semantic Web~\cite{bernerslee2001} technologies.
+We built the foundations to establish a \textit{semantic layer} for data integration within the agency,
+initially spanning three different base registries\footnote{Base registries of ERA: \url{https://www.era.europa.eu/registers_en}}:,
+Register of Infrastructure (RINF),
+Register of Authorized Types of Vehicles (ERATV)
+and the Centralized Virtual Vehicle Register (ECVVR).
+We validate the usefulness of the approach
+by reusing the produced semantic data to support route compatibility checks (RCC),
+a highly-demanded use case in the railway domain.
+The RCC use case is stipulated and specified in EU regulations 2016/797 and 2019/773~\cite{eu-797-2016, eu-773-2019}
+and was so far, unsupported by ERA
+due to interoperability issues among base registries.
+Additionally, we show the flexibility of graph-based data models,
+by integrating an additional external data source
+that complements the resulting Knowledge Graph.
+
+The contributions of this paper include
+(i)~an ontology\footnote{\url{http://era.ilabt.imec.be/era-vocabulary/index-en.html}}, modelling railway infrastructure aspects, rolling stock and authorized vehicle types, and 28 independently managed reference datasets;
+(ii)~a public and reusable RDF Knowledge Graph\footnote{\url{http://era.ilabt.imec.be/}} with 13.8 million triples about the European railway infrastructure and more than 800 thousand rolling stocks;
+(iii)~a cost-efficient system architecture that enables high-flexibility for use case support; and
+(iv)~an open source and RDF native Web application\footnote{\url{http://era.ilabt.imec.be/test/compatibility-check-demo/}} to support and process RCC queries.
+
+% What comes after my solution?
+This work demonstrates how data-centric system design,
+powered by Semantic Web technologies,
+provides a framework to achieve data interoperability
+and unlock innovative use cases and applications.
+The results of the work presented in this paper
+had a strong impact on ERA\footnote{ERA's roadmap for Linked Data mainstreaming: \url{https://www.era.europa.eu/sites/default/files/agency/docs/decision/decision_n250_annex1_linked_data_en.pdf}},
+which decided on making Semantic Web technologies
+the default setting for any future development of data,
+registers and specifications, under the agency's remit,
+for data exchange mandated by the EU legal framework.
+The next steps, which are already underway,
+include further extending the ontology
+with additional aspects,
+aligned with the requirements of the railway domain
+and evolving the system architecture
+towards a production-ready solution,
+fully integrated with the data management workflows of ERA.
+
+% Outline of the paper
+The remainder of this paper is organized as follows:
+Section 2 presents an overview of related work in the context
+of modelling approaches and interoperability for the railway domain.
+Section 3 describes the data sources and the RCC use case requirements.
+Section 4 gives an overview and description
+of our proposed solution architecture.
+Section 5 discusses advantages and limitations of the approach
+and Section 6 presents our conclusions and perspectives for future work.
