@@ -26,7 +26,7 @@ functional and geographic information about the railway infrastructure.
 IMSpoorXML is currently used within ProRail
 and is under active maintenance and development.
 The International Railway Standard IRS:30100 [RailTopoModel](http://www.railtopomodel.org/en/download/irs30100-apr16-7594BCA1524E14224D0.html?file=files/download/RailTopoModel/180416_uic_irs30100.pdf)[^rtm][](cite:cites irs30100)
-was developed under patronage of the International Union of Railways (UIC)
+was developed under the patronage of the International Union of Railways (UIC)
 and provides a systemic UML-based model
 for describing the topological aspects of railway infrastructure.
 It relies on the _connexity graph_ mathematical concept [](cite:cites gely2010)
@@ -53,7 +53,7 @@ An study of how Linked Data was applied
 in the British railway domain,
 highlights the reduction of costs
 as a consequence of more efficient data flows,
-and hints towards the need of increasing adoption from industry [](cite:cites morris2014).
+and hints towards the need for increasing adoption from industry [](cite:cites morris2014).
 More recently, Bischof et al. [](cite:cites bischof2020) outlined
 the requirements and challenges to define an open
 standard ontology for railway topologies based on existing standards.

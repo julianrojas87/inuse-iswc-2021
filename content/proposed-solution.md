@@ -20,10 +20,10 @@ and leverages fundamental Web principles such as caching,
 to reduce computational infrastructure costs
 while maintaining a high querying flexibility.
 
-In this section we present a description
+In this section, we present a description
 of the main architectural components of our proposed solution.
 We describe the proposed ontology and
-give an full overview of the solution architecture,
+give a full overview of the solution architecture,
 which includes a fully functional application to support
 route compatibility checks ([available online](http://era.ilabt.imec.be/test/compatibility-check-demo/)[^era-rcc]).
 
@@ -125,10 +125,10 @@ The tiles are built by the ERA Geo-LDF component via
 template SPARQL queries that select and filter the entities
 based on their geospatial properties.
 In this way, client applications can request relevant data
-for their purposes and since the API returns unmodified triples from the KG,
+for their purposes, and since the API returns unmodified triples from the KG,
 further querying and processing becomes possible on the client-side.
 Following this approach, we address the limitation
-of performing graph path finding queries directly on the SPARQL endpoints.
+of performing graph pathfinding queries directly on the SPARQL endpoints.
 Our client application implements a shortest-path algorithm
 and proceeds to download the relevant tiles based on
 the geospatial information given by origin-destination queries.
@@ -146,12 +146,12 @@ The application allows users to select
 an origin-destination pair of operational points (visible in map-based UI)
 to calculate one or more possible routes between them.
 Once selected, it proceeds to download the relevant KG tile fragments
-and perform the path finding process.
+and perform the pathfinding process.
 It handles RDF triples natively and implements the A* [](cite:cites hart1968) and Yen's [](cite:cites yen1971) algorithms
 for graph shortest path and top-k shortest path calculations respectively.
 Once a route is found, users may select a vehicle type or also a specific vehicle instance,
 for which the compatibility checks will be performed.
-Currently the application implements compatibility evaluation
+Currently, the application implements compatibility evaluation
 for 15 different parameters of both track sections and vehicle (types).
 The users can also visualize the internal connectivity
 inside the operational points that form part of a calculated route,

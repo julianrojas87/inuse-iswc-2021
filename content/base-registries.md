@@ -1,10 +1,10 @@
 ## Data Sources and Use Case
 {:#base-registries}
 
-In this section we present an overview of the different
+In this section, we present an overview of the different
 data sources reused by our proposed solution.
 We also describe the RCC use case
-as a main motivator for this work.
+as the main motivator for this work.
 
 ### ERA's base registries
 
@@ -14,9 +14,9 @@ namely the Register of Infrastructure (RINF),
 the Register of Authorized Types of Vehicles (ERATV)
 and the Centralized Virtual Vehicle Register (ECVVR).
 These registries contain overlapping conceptual definitions,
-represented as properties of different type of entities,
+represented as properties of different types of entities,
 which are locked within their respective data silos.
-Next we give a brief description for each of these registries.
+Next, we give a brief description for each of these registries.
 
 #### Register of Infrastructure
 
@@ -40,7 +40,7 @@ It aims to publish and keep an up-to-date set of authorized types of vehicles
 including information that references the technical specifications for each parameter.
 ERATV is maintained as a relational database
 populated through a Web application by multiple authorizing entities.
-ERATV provides also additional information for a certain vehicle type,
+ERATV also provides additional information for a certain vehicle type,
 such as manufacturing country, manufacturer, category
 and different physical and operational parameters.
 
@@ -59,7 +59,7 @@ There are known limitations for ERA's base registries,
 as is the case of RINF and the limited granularity
 it gives over the railway topology.
 RINF provides a view over the railway infrastructure,
-commonly referred as a meso-level view[^levels],
+commonly referred to as meso-level view[^levels],
 where complex topological structures inside stations, junctions, switches, etc.,
 are abstracted into single nodes in the network graph.
 Route calculations over this limited view,
@@ -70,7 +70,7 @@ requires further data about the connectivity within each network node.
 This connectivity issue currently stands as one of the main challenges,
 for an accurate and reliable data source
 description of the European railway infrastructure topology.
-For this reason we also consider an external data source,
+For this reason, we also consider an external data source,
 provided by the Dutch IM ProRail,
 which provides an additional topological description
 for addressing this issue limited to the region of Utrecht in The Netherlands.
@@ -98,7 +98,7 @@ thanks to the logical direction defined for _LineJ_,
 despite _T1_ being a bidirectional track.
 _OPx_ also has two outgoing tracks (_Ta_ and _Tb_),
 going towards _OPw_ and belonging to another national line _LineK_.
-Based on this information we establish
+Based on this information, we establish
 the correct connectivity that reflects real-world behavior.
 
 <figure id="table-1" class="table" markdown="1">
@@ -140,7 +140,7 @@ To determine if a certain vehicle type
 is compatible with a certain route,
 is necessary to first find possible routes through the railway infrastructure,
 which involves a very particular type of queries,
-namely graph path finding queries.
+namely graph pathfinding queries.
 The standard query language for RDF graphs (SPARQL)
 does not support finding complex relation paths between RDF entities [](cite:cites gubichev2011).
 The Property Paths querying syntax, introduced in SPARQL 1.1,
@@ -151,7 +151,7 @@ Currently there exist non-standard extensions to SPARQL (e.g. [Stardog path quer
 that address this limitation they are not widely supported across RDF graph databases.
 We consider this limitation in our proposed architecture
 and propose an alternative solution (see [Section 4.2](#architecture)) to non-standard SPARQL extensions
-and according to the current Web standards to prevent vendor lock in issues.
+and according to the current Web standards to prevent vendor lock-in issues.
 
 
 [^rinf-xsd]: <a href="https://www.era.europa.eu/sites/default/files/registers/docs/rinf_schema_en.xsd">https://www.era.europa.eu/sites/default/files/registers/docs/rinf_schema_en.xsd</a>
