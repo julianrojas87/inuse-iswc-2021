@@ -7,7 +7,7 @@ over the considered data sources,
 which stood as independent and disconnected data silos before.
 Our architecture relies entirely on semantic web technologies and tools,
 starting from the KG generation process
-and ending with a RDF native Web application
+and ending with an RDF native Web application
 that supports the addressed RCC use case.
 
 ### Solution Features
@@ -45,13 +45,13 @@ requires significantly less effort,
 than for example, altering a relational data model,
 potentially introducing breaking changes for the applications that depend on it.
 
-#### Cost-efficient KG publishing and quering
+#### Cost-efficient KG publishing and querying
 
 Our architecture design was made,
 with data publishing and querying cost-efficiency as a guiding principle.
 As described in [Section 4.2](#architecture),
 the ERA KG is published on triple stores with support for SPARQL querying.
-However the user application that supports the RCC use case
+However, the user application that supports the RCC use case
 does not perform direct SPARQL queries over these triple stores.
 Instead, it downloads specific parts of the KG via an API,
 over which it applies its business logic.
@@ -70,7 +70,7 @@ and more autonomous client applications,
 avoiding the need of hard-coding
 the application according to specific API interfaces.
 
-More importantly the API design in this architecture,
+More importantly, the API design in this architecture,
 has been done to maximize the cacheability of API responses.
 By following a geospatial fragmentation approach,
 which suits the RCC use case,
@@ -90,23 +90,23 @@ The ability to indirectly support calculation of path finding queries,
 is an important feature of our architectural design.
 Our approach not only, enables solving this particular type of queries,
 but also opens the door for clients
-to implement any path finding algorithm they prefer,
+to implement any pathfinding algorithm they prefer,
 and further customize them to better suit their requirements.
 Such level of specialization of algorithms
-is not always possible to be defined through general purpose query languages
+is not always possible to be defined through general-purpose query languages
 or it could potentially result in highly inefficient queries.
 
 ### Limitations and Open Challenges
 
 The identified limitations of our approach include:
 
-#### Performance of long distance queries
+#### Performance of long-distance queries
 
 One of the main limitations of our proposed solution
 is related to the trade-off between
 server computational cost and query performance,
 that is introduced when shifting query processing tasks to the client.
-This is particularly visible when dealing with long distance route calculations,
+This is particularly visible when dealing with long-distance route calculations,
 due to the increasing amount of data fragments
 that needs to be fetched and processed by the client.
 Different alternatives could be explored to address this limitation:
@@ -141,7 +141,7 @@ allowing to quickly compute long-distance path queries.
 They have been applied mostly to road networks graphs,
 where hierarchies of roads (highway, road, residential street, etc)
 can be used to create summaries for long distances.
-In principle they could also be applied to the railway topology graph.
+In principle, they could also be applied to the railway topology graph.
 The drawbacks of these approaches are related to the introduction
 of additional complexity for creating the graph summaries
 that need to be managed and kept in sync with the original KG.
@@ -156,7 +156,7 @@ over stale versions of the base registry relational DBs.
 To accurately reflect the real state of the railway network,
 is necessary to capture in _real-time_ the changes introduced into the source DBs,
 and immediately reflect them in the ERA KG.
-Other use cases such as signalling and interlocking,
+Other use cases such as signaling and interlocking,
 require precise and accurate data to guarantee safe vehicle operations.
 Approaches such as [Linked Data Event Streams](https://w3id.org/ldes/specification),
 remain to be investigated to support this requirements.
@@ -164,7 +164,7 @@ remain to be investigated to support this requirements.
 #### Hardcoded compatibility check rules
 The compatibility check rules,
 were directly implemented into the source code of the RCC client application.
-This constitutes a limitation, given that it makes more difficult
+This constitutes a limitation, given that it makes it more difficult
 to maintain and evolve the rules.
 Also, it makes the rules to be indistinguishable from the application,
 hindering their potential reusability in other use cases.
