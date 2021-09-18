@@ -1,10 +1,9 @@
 ## Data Sources and Use Case
 {:#base-registries}
 
-In this section, we present an overview of the different
-data sources reused by our proposed solution.
-We also describe the RCC use case
-as the main motivator for this work.
+In this section, we outline the different data sources
+reused by our proposed solution and describe
+the RCC use case as the main motivator for this work.
 
 ### ERA's base registries
 
@@ -39,10 +38,10 @@ is introduced by Article 5 of the EU regulation 2011/665/EU [](cite:cites eu-65-
 It aims to publish and keep an up-to-date set of authorized types of vehicles
 including information that references the technical specifications for each parameter.
 ERATV is maintained as a relational database
-populated through a Web application by multiple authorizing entities.
-ERATV also provides additional information for a certain vehicle type,
-such as manufacturing country, manufacturer, category
-and different physical and operational parameters.
+populated through a Web application by multiple authorizing organizations.
+It also provides additional information for a certain vehicle type,
+such as manufacturing country, manufacturer,
+category and different physical and operational parameters.
 
 #### Centralized Virtual Vehicle Register
 The European Centralised Virtual Vehicle Register (ECVVR)

@@ -39,8 +39,7 @@ between scalability and flexibility vs. performance.
 Further optimizations are required to achieve production-level performance
 without losing the benefits of the proposed solution architecture.
 
-For future work, we aim to explore how more granular descriptions
-of the railway, topology can be integrated to increase the reliability of the ERA KG.
-From an architectural perspective,
-stream-processing and KG virtualization approaches may be studied
-to support use cases with higher requirements on up-to-date data.
+In the future, we aim to explore how more granular descriptions of railways
+topology can be integrated to increase the reliability of the ERA KG.
+From an architectural perspective, stream-processing and KG virtualization approaches
+may be studied to support cases with higher requirements on up-to-date data.
